@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+ul {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 2px 2px 34px 0px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 2px 2px 34px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 2px 2px 34px 0px rgba(255, 255, 255, 0.75);
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: gray;
+}
+img {
+  cursor: pointer;
+  width: 100px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding-top: 1rem;
+}
+p {
+  cursor: pointer;
+  padding-top: 0.1rem;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 17px;
+}
+a {
+  /* text-decoration: none; */
+  list-style: none;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  ul {
+    max-width: 300px;
+
+    box-shadow: 2px 2px 16px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 2px 2px 16px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 2px 2px 16px 0px rgba(255, 255, 255, 0.75);
+  }
+  p {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
