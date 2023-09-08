@@ -16,19 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const todayElement = document.getElementById("dayOfWeek");
 
   todayElement.textContent = dayName;
-
-  // Day ends
-
-  // Time start
-
-  const now = new Date();
-
-  const utcHour = now.getUTCHours().toString().padStart(2, "0");
-  const utcMin = now.getMinutes().toString().padStart(2, "0");
-
-  const utcTime = document.getElementById("time");
-
-  utcTime.textContent = `${utcHour}:${utcMin}`;
-
-  //  Time ends
 });
+
+const utcTime = document.getElementById("time");
+
+function updateTimer() {
+  const now = new Date();
+  const utcMilliseconds = now.getTime();
+  utcTime.textContent = utcMilliseconds.toString();
+}
+
+setInterval(updateTimer, 1);
