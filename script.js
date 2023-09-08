@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Day starts
   const daysOfWeek = [
     "Sunday",
     "Monday",
@@ -16,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   todayElement.textContent = dayName;
 
+  // Day ends
+
+  // Time start
+
   const now = new Date();
 
   const utcHour = now.getUTCHours().toString().padStart(2, "0");
@@ -24,4 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const utcTime = document.getElementById("time");
 
   utcTime.textContent = `${utcHour}:${utcMin}`;
+
+  //  Time ends
 });
