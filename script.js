@@ -13,12 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const dayName = daysOfWeek[currentDay];
 
-  const todayElement = document.getElementById("dayOfWeek");
+  const todayElement = document.querySelector(
+    '[ data-testid="currentDayOfTheWeek"]'
+  );
 
   todayElement.textContent = dayName;
 });
 
-const utcTime = document.getElementById("time");
+const utcTime = document.querySelector('[data-testid="currentUTCTime"]');
 
 function updateTimer() {
   const now = new Date();
